@@ -18,78 +18,19 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import HeroWithSlider from "../components/ui/HeorWithSlider";
+import { Header } from "@radix-ui/react-accordion";
+import HeaderSection from "../components/HeaderSection";
+import EventsSection from "../components/ui/EventsSection";
+import MarqueeScroll from "../components/ui/MarqueeScroll";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b bg-white sticky top-0 z-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <Link to="/" className="text-xl font-bold text-green-600">
-                danapaani
-              </Link>
-            </div>
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link
-                to="/"
-                className="text-green-600 hover:text-green-700 font-medium border-b-2 border-green-600"
-              >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                className="text-gray-700 hover:text-green-600 font-medium"
-              >
-                About
-              </Link>
-              {/* <a
-                href="#"
-                className="text-gray-700 hover:text-green-600 font-medium"
-              >
-                Resources
-              </a> */}
-              <Link
-                to="/contact"
-                className="text-gray-700 hover:text-green-600 font-medium"
-              >
-                Contact
-              </Link>
-            </nav>
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-6">
-              Join/Giving
-            </Button>
-          </div>
-        </div>
-      </header>
-
+<HeaderSection/>
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto text-center max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Great futures are built
-            <br />
-            with a small charity
-          </h1>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            The world's largest social fundraising platform, optimized for your
-            charity is a more easy way
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 text-lg">
-              Donate now
-            </Button>
-            <Button
-              variant="outline"
-              className="flex items-center gap-2 px-8 py-3 text-lg"
-            >
-              <Play className="w-5 h-5" />
-              Watch Video
-            </Button>
-          </div>
-        </div>
-      </section>
+      <HeroWithSlider/>
 
       {/* Stats and Cards Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -223,154 +164,108 @@ const Index = () => {
       </section>
 
       {/* Fundraisers in Extreme Need */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Fundraisers In Extreme Need
-            </h2>
-            <div className="flex items-center gap-2">
-              <Button variant="outline" size="icon">
-                <ChevronLeft className="w-4 h-4" />
-              </Button>
-              <Button variant="outline" size="icon">
-                <ChevronRight className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-gray-900 text-white relative overflow-hidden h-64">
-              <CardContent className="p-6 h-full flex flex-col justify-end">
-                <div className="text-lg font-semibold mb-2">
-                  Help Turkey and Syria Earthquake Relief Fund
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-700 text-white relative overflow-hidden h-64">
-              <CardContent className="p-6 h-full flex flex-col justify-end">
-                <div className="text-lg font-semibold mb-2">
-                  Health sector in Nigeria
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-600 text-white relative overflow-hidden h-64">
-              <CardContent className="p-6 h-full flex flex-col justify-end">
-                <div className="text-lg font-semibold mb-2">
-                  Flood in Manipur
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-800 text-white relative overflow-hidden h-64">
-              <CardContent className="p-6 h-full flex flex-col justify-end">
-                <div className="text-lg font-semibold mb-2">
-                  Education in Iraq
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-700 text-white relative overflow-hidden h-64">
-              <CardContent className="p-6 h-full flex flex-col justify-end">
-                <div className="text-lg font-semibold mb-2">
-                  Help poor children from Gaza to access treatment
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-600 text-white relative overflow-hidden h-64">
-              <CardContent className="p-6 h-full flex flex-col justify-end">
-                <div className="text-lg font-semibold mb-2">
-                  Child Labour in World
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <EventsSection/>
+     
 
       {/* Community Stats */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="container mx-auto text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto"></div>
-            <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto"></div>
-            <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto"></div>
-            <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto"></div>
-          </div>
+  <div className="container mx-auto text-center">
+    {/* Icons or Image Placeholders */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+      <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto flex items-center justify-center text-lg font-semibold text-gray-600">
+        🍽️
+      </div>
+      <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto flex items-center justify-center text-lg font-semibold text-gray-600">
+        🧒
+      </div>
+      <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto flex items-center justify-center text-lg font-semibold text-gray-600">
+        🛍️
+      </div>
+      <div className="w-16 h-16 bg-gray-300 rounded-full mx-auto flex items-center justify-center text-lg font-semibold text-gray-600">
+        💧
+      </div>
+    </div>
 
-          <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
-            Join our community for donating and be a part of a positive change
-            in the world. With over
-          </p>
+    {/* Text Content */}
+    <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
+      Become a part of our mission to bring food, clean water, and dignity to
+      the underprivileged. Every small act of kindness counts.
+    </p>
 
-          <div className="text-4xl md:text-6xl font-bold text-gray-900 mb-2">
-            120,859+
-          </div>
-          <p className="text-gray-600 mb-6">people already joining</p>
+    <div className="text-4xl md:text-6xl font-bold text-gray-900 mb-2">
+      120,859+
+    </div>
+    <p className="text-gray-600 mb-6">people have already joined hands with us</p>
 
-          <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8">
-            Join Us now. Join today.
-          </Button>
-        </div>
-      </section>
+    <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8">
+      Join Us Today
+    </Button>
+  </div>
+</section>
+
 
       {/* Scrolling Banner */}
-      <section className="bg-green-600 py-4 overflow-hidden">
-        <div className="flex animate-scroll">
-          <div className="flex items-center space-x-8 text-white text-lg font-semibold whitespace-nowrap">
-            <span>let's help each other</span>
-            <span>*</span>
-            <span>let's help each other</span>
-            <span>*</span>
-            <span>let's help each other</span>
-            <span>*</span>
-            <span>let's help each other</span>
-            <span>*</span>
-          </div>
-        </div>
-      </section>
+
+      <MarqueeScroll/>
+      
+    
 
       {/* Meet Our Team */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Meet our team
-          </h2>
-          <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-            The world's largest social fundraising platform, optimized for your
-            charity is a more easy way.
-          </p>
+  <div className="container mx-auto text-center">
+    <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+    <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+      Behind every meal served, child supported, and community uplifted—stands a passionate team dedicated to making a difference.
+    </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gray-300 rounded-lg mx-auto mb-4"></div>
-              <h3 className="font-semibold text-gray-900">Courteney Henry</h3>
-              <p className="text-gray-600">Founder of danapaani</p>
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Team Member 1 */}
+      <div className="text-center">
+        <img
+          src="https://img.freepik.com/premium-photo/smiling-indian-male-entrepreneur-office-space-ai-generated_843560-1554.jpg"
+          alt="Team Member 1"
+          className="w-32 h-32 rounded-lg mx-auto mb-4 object-cover"
+        />
+        <h3 className="font-semibold text-gray-900">Rohit Sharma</h3>
+        <p className="text-gray-600">Founder & Director</p>
+      </div>
 
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gray-300 rounded-lg mx-auto mb-4"></div>
-              <h3 className="font-semibold text-gray-900">Brooklyn Simmons</h3>
-              <p className="text-gray-600">Product Manager</p>
-            </div>
+      {/* Team Member 2 */}
+      <div className="text-center">
+        <img
+          src="https://img.freepik.com/premium-photo/businesswoman-office-young-indian-girl-head-shot-woman-portrait-ai-generative_955712-4844.jpg"
+          alt="Team Member 2"
+          className="w-32 h-32 rounded-lg mx-auto mb-4 object-cover"
+        />
+        <h3 className="font-semibold text-gray-900">Sneha Patil</h3>
+        <p className="text-gray-600">Operations Manager</p>
+      </div>
 
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gray-300 rounded-lg mx-auto mb-4"></div>
-              <h3 className="font-semibold text-gray-900">Jerome Bell</h3>
-              <p className="text-gray-600">Lead Designer</p>
-            </div>
+      {/* Team Member 3 */}
+      <div className="text-center">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoNnFr3SDLg0DYYKEdgioAaruoMMdSh-mMRuaRBmZDTpzP0TusbKJjcgHPiODEJKlaeY&usqp=CAU"
+          alt="Team Member 3"
+          className="w-32 h-32 rounded-lg mx-auto mb-4 object-cover"
+        />
+        <h3 className="font-semibold text-gray-900">Ankit Verma</h3>
+        <p className="text-gray-600">Community Outreach Lead</p>
+      </div>
 
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gray-300 rounded-lg mx-auto mb-4"></div>
-              <h3 className="font-semibold text-gray-900">Dianne Williams</h3>
-              <p className="text-gray-600">Marketing Coordinator</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Team Member 4 */}
+      <div className="text-center">
+        <img
+          src="https://img.freepik.com/premium-photo/professional-woman_946538-56.jpg"
+          alt="Team Member 4"
+          className="w-32 h-32 rounded-lg mx-auto mb-4 object-cover"
+        />
+        <h3 className="font-semibold text-gray-900">Pooja Desai</h3>
+        <p className="text-gray-600">Volunteer Coordinator</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* FAQ Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
