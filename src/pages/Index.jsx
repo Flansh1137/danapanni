@@ -438,7 +438,7 @@ const Index = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">© 2023 danapaani NGO</h4>
+              <h4 className="font-semibold mb-4">© 2025danapaani NGO</h4>
               <div className="space-y-2 text-sm">
                 <p>Privacy Policy</p>
                 <p>Terms of Use</p>
@@ -447,13 +447,7 @@ const Index = () => {
 
             <div className="md:col-span-2">
               <p className="text-sm leading-relaxed">
-                Lorem ipsum dolor sit amet. Consectetur adipiscing elit. sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Dana Pani is dedicated to fighting hunger and restoring dignity through every meal served. With compassion at our core, we believe that access to food is a basic human right — not a privilege. Join us in our mission to ensure that no one sleeps hungry.
               </p>
             </div>
           </div>
