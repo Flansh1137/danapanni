@@ -43,12 +43,12 @@ const Contact = () => {
               >
                 About
               </Link>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-700 hover:text-green-600 font-medium"
               >
                 Resources
-              </a>
+              </a> */}
               <Link
                 to="/contact"
                 className="text-green-600 font-medium border-b-2 border-green-600"

@@ -44,12 +44,12 @@ const Index = () => {
               >
                 About
               </Link>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-700 hover:text-green-600 font-medium"
               >
                 Resources
-              </a>
+              </a> */}
               <Link
                 to="/contact"
                 className="text-gray-700 hover:text-green-600 font-medium"
