@@ -28,7 +28,7 @@ const Index = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="text-xl font-bold text-green-600">
-                gocingo
+                danapaani
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -174,7 +174,7 @@ const Index = () => {
       <section className="bg-lime-300 py-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-16">
-            Fundraising on Gocingo takes
+            Fundraising on danapaani takes
             <br />
             just a few minutes
           </h2>
@@ -348,7 +348,7 @@ const Index = () => {
             <div className="text-center">
               <div className="w-32 h-32 bg-gray-300 rounded-lg mx-auto mb-4"></div>
               <h3 className="font-semibold text-gray-900">Courteney Henry</h3>
-              <p className="text-gray-600">Founder of Gocingo</p>
+              <p className="text-gray-600">Founder of danapaani</p>
             </div>
 
             <div className="text-center">
@@ -388,7 +388,7 @@ const Index = () => {
                 Is there a free trial available?
               </AccordionTrigger>
               <AccordionContent>
-                Gocingo is free, Gocingo Charity has free. to receive it in the
+                danapaani is free, danapaani Charity has free. to receive it in the
                 form of registrants on your platform and it will get hold of it
                 in a few words. Don't miss out on what it...
               </AccordionContent>
@@ -429,7 +429,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="text-xl font-bold mb-4">Gocingo NGO</div>
+              <div className="text-xl font-bold mb-4">danapaani NGO</div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 bg-white/20 rounded-full"></div>
                 <div className="w-8 h-8 bg-white/20 rounded-full"></div>
@@ -438,7 +438,7 @@ const Index = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">© 2023 Gocingo NGO</h4>
+              <h4 className="font-semibold mb-4">© 2023 danapaani NGO</h4>
               <div className="space-y-2 text-sm">
                 <p>Privacy Policy</p>
                 <p>Terms of Use</p>

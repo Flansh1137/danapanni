@@ -27,7 +27,7 @@ const Contact = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="text-xl font-bold text-green-600">
-                gocingo
+                danapaani
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -101,10 +101,10 @@ const Contact = () => {
                           For general inquiries and support
                         </p>
                         <a
-                          href="mailto:hello@gocingo.org"
+                          href="mailto:hello@danapaani.org"
                           className="text-green-600 hover:text-green-700 font-medium"
                         >
-                          hello@gocingo.org
+                          hello@danapaani.org
                         </a>
                       </div>
                     </div>
@@ -345,7 +345,7 @@ const Contact = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="text-xl font-bold mb-4">Gocingo NGO</div>
+              <div className="text-xl font-bold mb-4">danapaani NGO</div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 bg-white/20 rounded-full"></div>
                 <div className="w-8 h-8 bg-white/20 rounded-full"></div>
@@ -354,7 +354,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">© 2023 Gocingo NGO</h4>
+              <h4 className="font-semibold mb-4">© 2023 danapaani NGO</h4>
               <div className="space-y-2 text-sm">
                 <p>Privacy Policy</p>
                 <p>Terms of Use</p>

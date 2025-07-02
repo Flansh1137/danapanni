@@ -12,7 +12,7 @@ const About = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="text-xl font-bold text-green-600">
-                gocingo
+                danapaani
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -52,7 +52,7 @@ const About = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-green-50 to-lime-50">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            About Gocingo
+            About danapaani
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             We are the world's largest social fundraising platform, dedicated to
@@ -188,7 +188,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded in 2020, Gocingo emerged from a simple but powerful
+                  Founded in 2020, danapaani emerged from a simple but powerful
                   idea: that technology could make charitable giving more
                   accessible, transparent, and effective than ever before.
                 </p>
@@ -268,7 +268,7 @@ const About = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <div className="text-xl font-bold mb-4">Gocingo NGO</div>
+              <div className="text-xl font-bold mb-4">danapaani NGO</div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 bg-white/20 rounded-full"></div>
                 <div className="w-8 h-8 bg-white/20 rounded-full"></div>
@@ -277,7 +277,7 @@ const About = () => {
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">© 2023 Gocingo NGO</h4>
+              <h4 className="font-semibold mb-4">© 2023 danapaani NGO</h4>
               <div className="space-y-2 text-sm">
                 <p>Privacy Policy</p>
                 <p>Terms of Use</p>
